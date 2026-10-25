@@ -5,9 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CampusFlow</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>CampusFlow</h1>
     <p>Your personal assignment tracker</p>
+
+    <form id="assignmentForm">
+        <input id="title" type="text" placeholder="Assignment title" required>
+        <input id="subject" type="text" placeholder="Subject" required>
+        <input id="deadline" type="date" required>
+        <button type="submit">Add Assignment</button>
+    </form>
+
+    <h2>My Assignments</h2>
+    <p id="emptyMessage">No assignments added yet.</p>
+    <div id="assignmentList"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
